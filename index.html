@@ -55,42 +55,42 @@
                 <div class="col-md-5 p-0">
                         <div class="img-home rounded-4 h-auto object-fit-cover position-relative">
                             <span class="reviws position-absolute top-0 start-0 m-3 bg-body rounded-pill p-1">
-                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>  4.5(156 reviews)
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> <span id=" star"> 4.5(156 reviews)</span>
                             </span>
                             <div style="left: 20px;right: 20px; bottom: 5px;" class="conten rounded-4 position-absolute  p-1 text-center bg-body">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <i class="fa-solid fa-regular fa-clock fs-4"></i>
                                         <p class="p-conten">Prep Time</p>
-                                        <h6 class="h6-conten">20 min</h6>
+                                        <h6 class="h6-conten" id="PrepTime">20 min</h6>
                                     </div>
                                     <div class="col-md-4">
                                         <i class="fa-solid fa-regular fa-fire-burner fs-4"></i>
                                         <p class="p-conten">Cook Time</p>
-                                        <h6 class="h6-conten">35 min</h6>
+                                        <h6 class="h6-conten" id="CookTime">35 min</h6>
                                     </div>
                                     <div class="col-md-4">
                                         <i class="fa-sharp fa-solid fa-users fs-4"></i>
                                         <p class="p-conten">Servings</p>
-                                    <h6 class="h6-conten">2 people</h6>
+                                    <h6 class="h6-conten" id="Servings">2 people</h6>
                                     </div>
                                 </div>
 
                             </div>
-                        <img class="w-100 imgg rounded-4" src="images/photo2.avif" alt="">
+                        <img id="mealImag" class="w-100 imgg rounded-4" src="images/photo2.avif" alt="">
                     </div>
                 </div>
                 <div class="col-md-7">
                 <div class="inner p-2">
                     <div class="bages">
-                        <span class="badge text-bg-success">Easy</span>
-                        <span class="badge text-bg-primary">Mediterranean</span>
+                        <span class="badge text-bg-success" id="difficlitly">Easy</span>
+                        <span class="badge text-bg-primary" id=" cusine">Mediterranean</span>
                     </div>
                     <br>
                     <div class="d-flex  justify-content-between">
                     <div>
-                    <h2>Mediterranean Quinoa Bowl</h2>
-                    <p>Healthy bowl with quinoa, vegetables, and tahini dressing</p>
+                    <h2 id="mealName">Mediterranean Quinoa Bowl</h2>
+                    <p id="description">Healthy bowl with quinoa, vegetables, and tahini dressing</p>
                     </div>
                     <div class="d-flex gap-2 ">
                         
@@ -99,7 +99,7 @@
 
                     </div>
                     </div>
-                    <div class="wrinning d-flex align-items-center gap-3 alert alert-danger rounded-4 mt-4"> 
+                    <div id="Extended" class="wrinning d-flex align-items-center gap-3 alert alert-danger rounded-4 mt-4"> 
                         <div class="icon"><i class="fa-solid fa-light fa-triangle-exclamation text-danger fs-4"></i></div>
                         <div class="text">
                             <h4 class="h4-alert">Extended Preparation Time</h4>
@@ -128,7 +128,7 @@
                                 <div class="tab-content my-4" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                             <div class="con rounded-3">
-                                <ul class="list-unstyled p-4 d-flex flex-column gap-3">
+                                <ul id="Ingredients" class="list-unstyled p-4 d-flex flex-column gap-3">
                                     <li class="d-flex gap-2"><span class="span-con rounded-circle d-flex align-items-center justify-content-center">1</span>1 cup quinoa</li>
                                     <li class="d-flex gap-2"><span class="span-con rounded-circle d-flex align-items-center justify-content-center">2</span>Cherry tomatoes, halved</li>
                                     <li class="d-flex gap-2"><span class="span-con rounded-circle d-flex align-items-center justify-content-center">3</span>Cucumber, diced</li>
@@ -144,7 +144,7 @@
                                 </div>
                         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                             <div class="con rounded-3">
-                                <ul class="list-unstyled p-4 d-flex flex-column gap-3">
+                                <ul id="Instructions" class="list-unstyled p-4 d-flex flex-column gap-3">
                                     <li class="d-flex gap-2"><span class="span-con1 p-3 d-flex align-items-center justify-content-center">1</span>Rinse quinoa thoroughly. Cook according to package directions, usually 15 minutes.</li>
                                     <li class="d-flex gap-2"><span class="span-con1 p-3 d-flex align-items-center justify-content-center">2</span>While quinoa cooks, prepare all vegetables and set aside.</li>
                                     <li class="d-flex gap-2"><span class="span-con1 p-3 d-flex align-items-center justify-content-center">3</span>For tahini dressing: mix tahini, lemon juice, garlic, and water until smooth.</li>
@@ -158,7 +158,7 @@
                                     </div>
   <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
     <div class="rounded3 d-flex flex-column gap-3">
-        <div class="row">
+        <div id="Nutrition" class="row">
             <div class="col-6">
                 <div class="innerr d-flex justify-content-between align-items-center p-3">
                     <div class="caliros d-flex justify-content-center align-items-center gap-3"><i class="fa-sharp fa-solid fa-fire p-3 text-danger bg-secondary rounded-3"></i>Calories</div>
@@ -173,7 +173,7 @@
             </div>
 
         </div>
-         <div class="row">
+         <div id="Nutrition" class="row">
             <div class="col-6">
                 <div class="innerr d-flex justify-content-between align-items-center p-3">
                     <div class="caliros d-flex justify-content-center align-items-center gap-3"><i class="fa-solid fa-wheat-awn p-3 rounded-3"></i>Carbohydrates</div>
@@ -189,7 +189,7 @@
 
         </div>
 
-         <div class="row">
+         <div id="Nutrition" class="row">
             <div class="col-6">
                 <div class="innerr d-flex justify-content-between align-items-center p-3">
                     <div class="caliros d-flex justify-content-center align-items-center gap-3"><i class="fa-solid fa-seedling rounded-3 p-3"></i>Fiber</div>
@@ -208,7 +208,7 @@
   </div>
   <div class="tab-pane fade" id="contacttt-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
     <div class="d-flex flex-column gap-3">
-    <div class="d-flex chife align-items-center gap-2 rounded-4">
+    <div id="" class="d-flex chife align-items-center gap-2 rounded-4">
         <div><i class="fa-solid fa-semibold fa-check p-2 rounded-circle"></i></div>
         <div> <p>Rinse quinoa well to remove bitter coating</p></div>
     </div>
@@ -229,7 +229,7 @@
   
                                 </div>
                                 <hr>
-                                <button class="btn1 p-2 rounded-3 text-light"> <i class="fa-solid fa-rotate"></i> Try Another Recipe</button>
+                                <button id="randomRecip" class="btn1 p-2 rounded-3 text-light"> <i class="fa-solid fa-rotate"></i> Try Another Recipe</button>
 
                                     </div>
                 </div>

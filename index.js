@@ -295,3 +295,23 @@ var meals = [
         ]
     }
 ];
+
+
+var  star = document.getElementById(" star");
+var PrepTime =document.getElementById("PrepTime");
+var CookTime = document.getElementById("CookTime");
+var Servings = document.getElementById("Servings");
+var mealImag = document.getElementById("mealImag");
+var difficlitly = document.getElementById("difficlitly");
+var cusine = document.getElementById("cusine");
+var mealName = document.getElementById("mealName");
+var description = document.getElementById("description");
+var Extended = document.getElementById("Extended");
+var Ingredients =document.getElementById("Ingredients");
+var Instructions = document.getElementById("Instructions");
+var Nutrition = document.getElementById("Nutrition");
+var mealImag = document.getElementById("mealImag");
+
+
+
+var randomRecip = document.getElementById("randomRecip");
