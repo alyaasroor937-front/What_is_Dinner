@@ -151,3 +151,57 @@ color:#1F50E7 !important;
 .nav-tabs .nav-link.active::after {
   width: 90%; 
 }
+.number{
+    font-size: 20px !important;
+    line-height: 28px !important;
+    font-weight: 700 !important;
+}
+.caliros{
+    color: grey;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 500;
+}
+.bg-secondary{
+    background-color: #FFEDD4 !important;
+}
+.innerr{
+    background-color: #F9FAFB !important;
+    border-radius: 20px !important;
+}
+.fa-dumbbell{
+    background-color: rgba(25, 117, 179, 0.546) !important;
+    color: blue;
+}
+.fa-wheat-awn{
+    background-color: #FEF9C2;
+    color: #D08700;
+}
+.fa-droplet{
+    background-color: rgba(255, 0, 0, 0.185);
+    color: red;
+}
+.fa-seedling{
+    background-color: rgba(91, 194, 91, 0.363);
+    color: green;
+}
+.fa-box{
+    background-color: #FCE7F3;
+    color: #E60076;
+}
+.fa-check{
+    background-color: #E17100;
+    color: white;
+}
+.chife{
+    background-color: rgba(255, 255, 0, 0.105);
+    padding: 16px 10px !important;
+    border-left: 7px solid #FFB900;
+}
+.img-home{
+    height: 700px !important;
+}
+.imgg{
+    height: 700px !important;
+    width: 100% !important;
+}
