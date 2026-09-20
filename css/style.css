@@ -75,3 +75,79 @@ color:#1F50E7 !important;
     background-color: #FFEDD4 !important;
     color: red !important;
 }
+.h6-conten{
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 700;
+    margin-top: -18px !important;
+}
+.p-conten{
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 400;
+        color:oklch(0.551 0.027 264.364);
+}
+.fa-clock{
+    color: #FF540C;
+}
+.fa-fire-burner{
+    color: red;
+}
+.fa-users{
+    color: blue;
+}
+.con{
+    background-color: #FFF9EC;
+}
+.span-con{
+    background-color: #FF540C;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50% !important;
+    
+}
+.span-con1{
+    background-color: #FF540C;
+    color: white;
+    width: 50px !important;
+    height: 40px;
+    border-radius: 10px !important;
+    
+}
+
+/* //////////// */
+.nav-tabs {
+  border-bottom: 2px solid #e0e0e0; 
+}
+
+.nav-tabs .nav-link {
+  background: none !important;
+  border: none !important;
+  color: #777; 
+  font-weight: 500;
+  position: relative;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-tabs .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ff5722; 
+  transition: width 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+  color: #ff5722 !important; 
+}
+
+.nav-tabs .nav-link:hover::after,
+.nav-tabs .nav-link.active::after {
+  width: 90%; 
+}
