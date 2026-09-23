@@ -336,6 +336,8 @@ Extended.classList.replace("d-none" , "d-flex")
 Extended.classList.replace("d-flex" , "d-none");
 
 displayIngredients()
+displayInstructions()
+displayNutrition()
 
 }
 
@@ -343,10 +345,50 @@ function displayIngredients(){
     var box = ``
     for (var i =0 ; i < meals[index].Ingredients.length ; i++){
         box+=`
-        <li class="d-flex gap-2"><span class="span-con rounded-circle d-flex align-items-center justify-content-center">${i+1}</span> ${meals[index].Ingredients[i]}</li>
+        <li class="d-flex gap-2"><span class="span-con rounded-circle d-flex align-items-center justify-content-center">${i+1}</span>${meals[index].Ingredients[i]}</li>
                                 
      `}
 Ingredients.innerHTML = box;
    
     }
+
+
+    function displayInstructions(){
+ var box = ``
+    for (var i =0 ; i < meals[index].Instructions.length ; i++){
+        box+=`
+        <li class="d-flex gap-2"><span class="span-con1 p-3 d-flex align-items-center justify-content-center">${i+1}</span>${meals[index].Instructions[i]}</li>
+                                
+                                
+     `}
+Instructions.innerHTML = box;
+    }
+
+
+    function displayNutrition() {
+    var box = ``;
+    var data = meals[index].Nutrition[0];
+
+    var icons = {
+        Calories: "fa-sharp fa-solid fa-fire text-danger bg-secondary",
+        Protein: "fa-solid fa-dumbbell fs-6",
+        Carbohydrates: "fa-solid fa-wheat-awn",
+        Fat: "fa-solid fa-droplet fs-6",
+        Fiber: "fa-solid fa-seedling",
+        Sodium: "fa-solid fa-box"
+    };
+
+    for (var key in data) {
+        box +=`
+        <div class="col-6">
+            <div class="innerr d-flex justify-content-between align-items-center p-3">
+                <div class="caliros d-flex justify-content-center align-items-center gap-3">
+                    <i class="${icons[key]} p-3 rounded-3"></i>${key}
+                </div>
+                <div class="number"><h5>${data[key]}</h5></div>
+            </div>
+        </div>`;
+    }
+    Nutrition.innerHTML = box;
+}
     displayMeal()
