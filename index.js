@@ -134,7 +134,14 @@ var meals = [
                 Fiber: "6g",
                 Sodium: "490 mg"
             }
-        ]
+        ],
+
+        ChefTips: [
+    "Save a cup of pasta water to loosen the sauce if it gets thick",
+    "Use ripe tomatoes for a sweeter, richer sauce",
+    "Add the cream on low heat so it doesn't curdle",
+    "Grate fresh parmesan instead of using pre-grated"
+]
     },
 
     {
@@ -175,7 +182,13 @@ var meals = [
                 Fiber: "9g",
                 Sodium: "310 mg"
             }
-        ]
+        ],
+        ChefTips: [
+    "Dry the lettuce well so the dressing sticks",
+    "Add the dressing right before serving to keep it crisp",
+    "Squeeze lemon on the avocado to stop it from browning",
+    "Chill the vegetables before assembling for extra freshness"
+]
     },
 
     {
@@ -216,7 +229,13 @@ var meals = [
                 Fiber: "2g",
                 Sodium: "420 mg"
             }
-        ]
+        ],
+        ChefTips: [
+    "Pound the chicken to an even thickness for uniform cooking",
+    "Marinate for at least 30 minutes for deeper flavor",
+    "Don't move the chicken while it sears to get a golden crust",
+    "Rest the chicken before slicing to keep it juicy"
+]
     },
 
     {
@@ -257,7 +276,13 @@ var meals = [
                 Fiber: "8g",
                 Sodium: "380 mg"
             }
-        ]
+        ],
+        ChefTips: [
+    "Choose a ripe avocado that gives slightly when pressed",
+    "Toast the bread well so it stays crispy under the toppings",
+    "Add a squeeze of lemon to keep the avocado bright green",
+    "Cook the eggs just before serving so they're warm"
+]
     },
 
     {
@@ -299,7 +324,13 @@ var meals = [
                 Fiber: "4g",
                 Sodium: "620 mg"
             }
-        ]
+        ],
+        ChefTips: [
+    "Sauté the vegetables first to build a deeper flavor",
+    "Simmer on low heat for a clearer, richer broth",
+    "Shred the chicken while it's warm, it's much easier",
+    "Add fresh parsley at the end to keep it bright"
+]
     }
 ];
 
@@ -329,7 +360,7 @@ var randomRecip = document.getElementById("randomRecip");
 
 
 function displayMeal(){
-    getRandomIndex();
+
 star.innerHTML =`${meals[index].star} (${meals[index].reviews} reviews)`;
 PrepTime.innerHTML = meals[index].PrepTime;
 CookTime.innerHTML = meals[index].CookTime;
@@ -428,4 +459,7 @@ function displayChefTips() {
         }while(temp == index)
 
         index = temp;
+        displayMeal();
     }
+getRandomIndex();
+randomRecip.onclick = getRandomIndex;
