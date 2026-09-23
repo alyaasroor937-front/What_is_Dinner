@@ -56,7 +56,7 @@ var meals = [
         CookTime: "35 min",
         Servings: "2 people",
         Extended: true,
-        mealName: "Mediterranean Quinoa Bowl",
+        mealName: "Mediterranean Quinoa Bowl ",
         difficlitly: "Easy",
         cusine: "Mediterranean",
         description: "Healthy bowl with quinoa, vegetables, and tahini dressing",
@@ -297,7 +297,7 @@ var meals = [
 ];
 
 
-var  star = document.getElementById(" star");
+var star = document.getElementById("star");
 var PrepTime =document.getElementById("PrepTime");
 var CookTime = document.getElementById("CookTime");
 var Servings = document.getElementById("Servings");
@@ -312,6 +312,41 @@ var Instructions = document.getElementById("Instructions");
 var Nutrition = document.getElementById("Nutrition");
 var mealImag = document.getElementById("mealImag");
 
-
+var index = 0;
 
 var randomRecip = document.getElementById("randomRecip");
+
+
+// display
+
+
+function displayMeal(){
+star.innerHTML =`${meals[index].star} (${meals[index].reviews} reviews)`;
+PrepTime.innerHTML = meals[index].PrepTime;
+CookTime.innerHTML = meals[index].CookTime;
+Servings.innerHTML = meals[index].Servings;
+difficlitly.innerHTML = meals[index].difficlitly;
+cusine.innerHTML = meals[index].cusine;
+mealName.innerHTML = meals[index].mealName;
+description.innerHTML = meals[index].description;
+ if(meals[index].Extended){
+Extended.classList.replace("d-none" , "d-flex")
+ }else
+
+Extended.classList.replace("d-flex" , "d-none");
+
+displayIngredients()
+
+}
+
+function displayIngredients(){
+    var box = ``
+    for (var i =0 ; i < meals[index].Ingredients.length ; i++){
+        box+=`
+        <li class="d-flex gap-2"><span class="span-con rounded-circle d-flex align-items-center justify-content-center">${i+1}</span> ${meals[index].Ingredients[i]}</li>
+                                
+     `}
+Ingredients.innerHTML = box;
+   
+    }
+    displayMeal()
