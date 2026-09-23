@@ -86,7 +86,14 @@ var meals = [
                 Fiber: "10g",
                 Sodium: "540 mg"
             }
-        ]
+        ],
+
+    ChefTips: [
+    "Rinse quinoa well to remove bitter coating",
+    "Let quinoa cool before adding fresh ingredients",
+    "Make extra tahini dressing - it keeps well in the fridge",
+    "Add grilled chicken or chickpeas for extra protein"
+]
     },
 
     {
@@ -311,6 +318,7 @@ var Ingredients =document.getElementById("Ingredients");
 var Instructions = document.getElementById("Instructions");
 var Nutrition = document.getElementById("Nutrition");
 var mealImag = document.getElementById("mealImag");
+var ChefTips = document.getElementById("ChefTips");
 
 var index = 0;
 
@@ -338,6 +346,7 @@ Extended.classList.replace("d-flex" , "d-none");
 displayIngredients()
 displayInstructions()
 displayNutrition()
+displayChefTips()
 
 }
 
@@ -390,5 +399,17 @@ Instructions.innerHTML = box;
         </div>`;
     }
     Nutrition.innerHTML = box;
+}
+
+function displayChefTips() {
+    var box = ``;
+    for (var i = 0; i < meals[index].ChefTips.length; i++) {
+        box +=`
+        <div class="d-flex chife align-items-center gap-2 rounded-4">
+            <div><i class="fa-solid fa-semibold fa-check p-2 rounded-circle"></i></div>
+            <div><p>${meals[index].ChefTips[i]}</p></div>
+        </div>`;
+    }
+    ChefTips.innerHTML = box;
 }
     displayMeal()
