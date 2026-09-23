@@ -97,7 +97,7 @@ var meals = [
     },
 
     {
-        image: "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?q=80&w=800&auto=format&fit=crop",
         star: 4.8,
         reviews: 203,
         PrepTime: "15 min",
@@ -138,7 +138,7 @@ var meals = [
     },
 
     {
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=800&auto=format&fit=crop",
         star: 4.6,
         reviews: 178,
         PrepTime: "15 min",
@@ -179,7 +179,7 @@ var meals = [
     },
 
     {
-        image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?q=80&w=800&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800&auto=format&fit=crop",
         star: 4.7,
         reviews: 241,
         PrepTime: "20 min",
@@ -220,7 +220,7 @@ var meals = [
     },
 
     {
-        image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop",
         star: 4.4,
         reviews: 132,
         PrepTime: "10 min",
@@ -261,7 +261,7 @@ var meals = [
     },
 
     {
-        image: "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?q=80&w=800&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1633504581786-316c8002b1b9?q=80&w=800&auto=format&fit=crop",
         star: 4.9,
         reviews: 287,
         PrepTime: "25 min",
@@ -329,6 +329,7 @@ var randomRecip = document.getElementById("randomRecip");
 
 
 function displayMeal(){
+    getRandomIndex();
 star.innerHTML =`${meals[index].star} (${meals[index].reviews} reviews)`;
 PrepTime.innerHTML = meals[index].PrepTime;
 CookTime.innerHTML = meals[index].CookTime;
@@ -336,6 +337,7 @@ Servings.innerHTML = meals[index].Servings;
 difficlitly.innerHTML = meals[index].difficlitly;
 cusine.innerHTML = meals[index].cusine;
 mealName.innerHTML = meals[index].mealName;
+mealImag.src = meals[index].image;
 description.innerHTML = meals[index].description;
  if(meals[index].Extended){
 Extended.classList.replace("d-none" , "d-flex")
@@ -412,4 +414,18 @@ function displayChefTips() {
     }
     ChefTips.innerHTML = box;
 }
-    displayMeal()
+    displayMeal();
+    Math.floor
+    Math.ceil
+    Math.round
+
+
+    function getRandomIndex(){
+    
+        var temp = Math.floor(Math.random()*meals.length);
+        do{
+            temp = Math.floor(Math.random()*meals.length);
+        }while(temp == index)
+
+        index = temp;
+    }
